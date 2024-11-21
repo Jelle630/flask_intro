@@ -1,6 +1,7 @@
+from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
-db = SQLAlchemy()
+db = SQLAlchemy(app)
 
 
 class User(db.Model):
@@ -9,4 +10,4 @@ class User(db.Model):
 
     def __repr__(self):
         return f'<User {self.username}>'
-    
+flask Run
